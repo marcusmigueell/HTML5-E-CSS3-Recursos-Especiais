@@ -1,0 +1,25 @@
+#container,#caixa {
+    width: 300px;
+    height: 300px;
+    background: url(../imagens/camera.png);
+}
+
+#container, #caixa h1 {
+    background: rgb(255, 255, 255, 0.5);    /* 0.5 é o valor da transparência */
+}
+
+#container, #caixa2 {
+    width: 300px;
+    height: 300px;
+    background: linear-gradient(to left, red, green);    
+    /* 
+    **** pode ser valore hexadecimais para cor ****
+    **** to left da direita para a esquerda ****
+    **** pode ser em graus tbm **** 
+    **** background: linear-gradient(80deg, red, green); ****
+    **** e pode colocar quantas cores quiser **** 
+    **** background: linear-gradient(to left, red, green, yellow); **** 
+    **** background: radial-gradient(red, green); ****
+    no radial podemos colocar quantas cores quisermos tbm e será feito em circulos contando do centro 
+    */
+}
