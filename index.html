@@ -2,63 +2,60 @@
 <html lang="pt-br">
 <head>
 
-    <title>Novas Tags do HTML5</title>
+    <title>Novas Tags de Input do HTML5</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-
-    <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-    <![endif]-->
     
 </head>
 
 <body>
 
-    <header>    <!-- tag de cabeçalho -->
-        <h1>Logo</h1>
-        <span>Meu Site</span>
-    </header>
+    <form action="">
 
-    <nav>   <!-- tag para navegação-->
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="">Contato</a></li>
-        </ul>
-    </nav>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required autofocus>
+        <!-- required é para não deixar o usuário enviar sem digitar o input que esta com required 
+            autofocus ao recarregar a página o campo para digitar o nome estará selecionado para digitação, 
+            isso acontece em qualquer input que escolhermos para colocar o autofocus -->
+        <br><br>
 
-    <article>   <!-- tag para conteúdos -->
-        <h3>Novos cursos</h3>
-        <section>   <!-- criar seções dentro do nosso conteudo -->
-            <h4>Curso de programação</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odio nihil assumenda. Numquam voluptatibus odit possimus dolore voluptates deleniti enim illum unde accusamus sequi perspiciatis quas, cum laboriosam adipisci explicabo.</p>
-            <span>
-                Atualizado em: <time>03/05/2021</time>
-            </span>
-        </section>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+        <br><br>
 
-        <section>   <!-- criar seções dentro do nosso conteudo -->
-            <h4>Curso de Web</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia odio nihil assumenda. Numquam voluptatibus odit possimus dolore voluptates deleniti enim illum unde accusamus sequi perspiciatis quas, cum laboriosam adipisci explicabo.</p>
-            <span>
-                Atualizado em: <time>03/05/2021</time>
-            </span>
-        </section>
+        <label for="numero">Numero:</label>
+        <input type="number" id="numero" min="1" max="20" step="5">
+        <!-- com min=1 e max=20 o valor selecionado tem que ser entre esses valores e o step e para pular de 5 em 5, pois escolhi o valor 5 para o step -->
+        <br><br>
 
-    </article>
+        <label for="url">URL:</label>
+        <input type="url" id="url" placeholder="ex: https://www...">
+        <br><br>
 
-    <aside>     <!-- área lateral -->
-        <h3>Sobre o autor</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum eos voluptate sapiente in maiores perspiciatis alias, ad esse aspernatur recusandae ducimus explicabo similique autem incidunt saepe perferendis non quidem hic?</p>
-    </aside>
+        <label for="pesquisa">Pesquisa:</label>
+        <input type="search" id="pesquisa">
+        <br><br>
 
-    <footer>    <!-- tag para rodapé -->
-        <p>&copy; 2021 - Marcus Vinicius </p>
-    </footer>
+        <label for="range">Range:</label>
+        <input type="range" id="range" min="1" max="20" value="10">
+        <!-- value será o valor inicial que o range irá iniciar -->
+        <br><br>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data">
+        <br><br>
+
+        <label for="cor">Cor::</label>
+        <input type="color" id="cor">
+        <br><br>
+
+        <input type="submit" value="enviar">
+
+    </form>
     
 </body>
 
