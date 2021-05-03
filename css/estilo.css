@@ -1,0 +1,29 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    box-shadow: 20px 20px 10px 80px black;
+    /*
+    **** box-shadow para aplicar na div ****
+    **** o primeiro valor, movimenta o texto na horizontal, numeros positivos movimenta para direita ****
+    **** o segundo valor, movimenta o texto na vertical, numeros positivos movimenta para baixo ****
+    **** box-shadow: 20px 20px 10px black; 10px é um borrado que podemos aplicar na sombra ****
+    **** quarto valor é o espalhamento da sombra, ou seja, aumenta o tamanho da mesma ****
+    **** na cor podemos usar cores, tanto como valores hexadecimais quanto rgba ****
+    */
+}
+
+#caixa h1 {
+    color: white;
+    text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.6);   
+    /*
+    **** o primeiro valor, movimenta o texto na horizontal, numeros positivos movimenta para direita ****
+    **** o segundo valor, movimenta o texto na vertical, numeros positivos movimenta para baixo ****
+    **** na cor podemos usar cores, tanto como valores hexadecimais quanto rgba ****
+    **** text-shadow: 20px 20px rgba(0, 0, 0, 0.5); para usar opacidade junto com rgba ****
+    **** text-shadow: 20px 20px 5px rgba(0, 0, 0, 0.5); 5px é um borrado que podemos aplicar na sombra ****
+    **** text-shadow é para aplicar a sombra em um texto ****
+    */
+}
