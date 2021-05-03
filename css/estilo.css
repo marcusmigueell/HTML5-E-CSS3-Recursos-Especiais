@@ -1,0 +1,29 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 50px;
+
+    /* webkit e moz para eo box-sizing ser usando em navegadores antigos */
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;    
+    box-sizing: border-box; /* esse comando é para tirar o acréscimo de 50px do padding no width e height */
+    
+    /* -webkit-border-radius: 20px 90px;
+    -moz--border-radius: 20px 90px;
+    border-radius: 10px 50px 80px 100px;
+    border-radius: 20px;  /* usado para fazer o arredondamento em objetos da página */
+}
+
+#caixa2 {
+    width: 400px;
+    height: 300px;
+    background: #b9c941;
+    /* border-radius: 10px 50px 80px 100px;
+    border-radius: 20px;  /* usado para fazer o arredondamento em objetos da página */
+}
+
+.arredondamento {
+    border-radius: 150px;
+}
